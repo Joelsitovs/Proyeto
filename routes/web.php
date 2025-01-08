@@ -9,9 +9,6 @@ Route::get ('/', [Morfeo3dController::class, 'index'])->name('morfeo3d.index');
 
 
 
-Route::get('/', function () {
-    return view('morfeo3d.index');
-})->middleware(['auth', 'verified'])->name('morfeo3d.index');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
