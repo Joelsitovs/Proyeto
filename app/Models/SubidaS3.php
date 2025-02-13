@@ -5,6 +5,6 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 class SubidaS3 extends Model
-{
+{ 
     //
 }
